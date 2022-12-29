@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+@font-face {
+    font-family: Lost;
+    src: url('lost.leonest-reguler.otf');
+}
+
+body{
+    background-image: url('background.png');
+    background-size: cover;/* COLOCA A IMAGEM PRA PREENCHER TODO O FUNDO*/
+    display: grid;
+    grid-template-rows: 150px 400px 400px;
+    grid-template-areas: "header"
+                         "section"
+                         "footer";
+    grid-auto-rows: minmax(100px, auto);
+}
+header{
+    grid-area: header;
+    display: flex;
+}
+main{
+    grid-area: section;
+    color: white;
+    display: flex;
+    width: 820px;
+    text-align: justify;
+    padding: 20px;
+    margin-left: 40px;
+}
+h1{
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-family: Lost;
+}
+p{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    word-spacing: 3px;
+}
+#titulo{
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+footer{
+    color: white;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
